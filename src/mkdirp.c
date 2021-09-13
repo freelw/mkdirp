@@ -2,6 +2,7 @@
 #include <errno.h>
 #include <sys/stat.h>
 #include <stdio.h>
+#include "config.h"
 
 #define BUFFER_LEN 1024
 int mkdirp(const char *pathname, mode_t mode)
