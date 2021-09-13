@@ -1,10 +1,12 @@
-#include "mkdirp.h"
+#include <stdio.h>
 #include <errno.h>
 #include <sys/stat.h>
-#include <stdio.h>
+
 #include "config.h"
+#include "mkdirp.h"
 
 #define BUFFER_LEN 1024
+
 int mkdirp(const char *pathname, mode_t mode)
 {
     char buffer[BUFFER_LEN];
