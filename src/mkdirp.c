@@ -38,7 +38,6 @@ int mkdirp(const char *pathname, mode_t mode)
         if (*p == '/') {
             *p = 0;
             if (0 != mkdir(buffer, mode)) {
-                
                 if (errno == EEXIST) {
                     is_exist_dir = exist_dir(buffer);
                 }
