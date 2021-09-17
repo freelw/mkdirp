@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BASEDIR=/tmp/abcd/werf/
-TESTDIR=${BASEDIR}log_link/abc
+TESTDIR=${BASEDIR}/log_link/abc/qqq/www
 mkdir -p ${BASEDIR}
 
 function end()
