@@ -7,7 +7,7 @@
 
 #define BUFFER_LEN 1024
 
-int exist_dir(char *buffer) {
+static int exist_dir(char *buffer) {
     struct stat _s;
     stat(buffer, &_s);
     if (S_ISDIR(_s.st_mode)) {
